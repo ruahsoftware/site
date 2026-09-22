@@ -254,6 +254,92 @@ input:checked + .slider:before {
       text-align: justify;
     }
 
+    /* Entrada de blog / novedades dentro de una rs-card */
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .post-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .post-date {
+      font-size: .8rem;
+      color: var(--text-color);
+      opacity: .65;
+    }
+    .post-lead {
+      margin: 0 0 14px;
+      color: var(--text-color);
+      font-size: .92rem;
+      line-height: 1.55;
+      text-align: justify;
+    }
+    .post-section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 18px 0 6px;
+      font-size: .92rem;
+      font-weight: 800;
+      color: var(--text-color);
+    }
+    .post-section-text {
+      margin: 0 0 4px;
+      color: var(--text-color);
+      font-size: .88rem;
+      line-height: 1.5;
+      text-align: justify;
+      opacity: .92;
+    }
+    .post-list {
+      list-style: none;
+      margin: 6px 0 0;
+      padding: 0;
+    }
+    .post-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: .88rem;
+      line-height: 1.45;
+      color: var(--text-color);
+      opacity: .92;
+    }
+    .post-list li::before {
+      content: "";
+      flex: none;
+      width: 6px;
+      height: 6px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .post-cta {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(128,128,128,.25);
+      font-size: .9rem;
+      color: var(--text-color);
+    }
+    .post-cta a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .post-cta a:hover { text-decoration: underline; }
+
     /* Galería */
     .gallery {
       display: grid;
@@ -502,6 +588,61 @@ input:checked + .slider:before {
     <div class="tab-content">
       <!-- Posts -->
       <div id="posts" class="tab-panel active">
+        <div class="rs-wrap">
+          <div class="rs-card">
+            <div class="post-meta">
+              <span class="post-badge">Actualización</span>
+              <span class="post-date">22 de septiembre de 2026</span>
+            </div>
+            <h2 class="rs-title">DailyVerse 2.0 ya está disponible</h2>
+            <p class="post-lead">
+              Versículo y Devocional Diario te acompaña cada día con un versículo bíblico, un devocional y una oración — y ahora va mucho más allá: es un compañero completo para tu vida espiritual. Esto es todo lo nuevo en esta versión:
+            </p>
+
+            <h3 class="post-section-title">📖 Versículo y devocional diario</h3>
+            <p class="post-section-text">Cada día recibes un versículo bíblico junto a un devocional y una oración relacionada.</p>
+
+            <h3 class="post-section-title">💛 Versículos según cómo te sientes</h3>
+            <p class="post-section-text">Elige entre distintas emociones —paz, gozo, tristeza, gratitud, irritación y más— y encuentra versículos que hablan directo a lo que vives hoy.</p>
+
+            <h3 class="post-section-title">🍞 Pan de Vida</h3>
+            <p class="post-section-text">¿Necesitas una palabra extra? Obtén un versículo al azar cuando quieras, además de tu versículo diario oficial.</p>
+
+            <h3 class="post-section-title">🧭 Mi Camino — tu crecimiento espiritual en un solo lugar</h3>
+            <ul class="post-list">
+              <li>Biblia completa (Reina Valera 1909) con planes de lectura guiados.</li>
+              <li>Desafíos espirituales con racha de días y niveles de dificultad.</li>
+              <li>Diario de oración: registra tus peticiones y celebra cuando Dios responda.</li>
+              <li>Progreso con insignias, logros y tu ánimo de la semana en un gráfico.</li>
+            </ul>
+
+            <h3 class="post-section-title">🧰 Herramientas para tu vida de fe</h3>
+            <ul class="post-list">
+              <li>Mapas bíblicos interactivos para explorar la geografía de la Biblia.</li>
+              <li>Finanzas personales con cálculo automático de diezmo y gastos recurrentes.</li>
+              <li>Cronómetro de ayuno (parcial, total o personalizado) con historial.</li>
+              <li>Calendario de eventos de tu iglesia: cultos, vigilias y más.</li>
+            </ul>
+
+            <h3 class="post-section-title">🙏 Comunidad de fe</h3>
+            <p class="post-section-text">Comparte peticiones de oración y testimonios con otros creyentes, comenta para animar a alguien, apoya con un "Estoy orando" y edita tus publicaciones si te equivocas.</p>
+
+            <h3 class="post-section-title">❤️ Favoritos y notas</h3>
+            <p class="post-section-text">Guarda los versículos que más te tocan y agrega tus propias reflexiones a cualquiera — edítalas o elimínalas cuando quieras.</p>
+
+            <h3 class="post-section-title">📤 Comparte tu fe</h3>
+            <p class="post-section-text">Comparte el versículo del día como texto o como una imagen en alta definición para tus redes sociales.</p>
+
+            <h3 class="post-section-title">🌍 Bilingüe y accesible</h3>
+            <p class="post-section-text">Toda la app en español e inglés, con lectura en voz alta, tamaño de texto ajustable —ideal para dificultad visual— y modo claro u oscuro, a tu gusto.</p>
+
+            <p class="post-cta">
+              Descarga DailyVerse 2.0 y haz de la Palabra de Dios parte de tu día, cada día.
+              <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer">Actualiza o descarga aquí</a>.
+            </p>
+          </div>
+        </div>
+
         <div class="rs-wrap">
           <div class="rs-card">
             <h2 class="rs-title">DailyVerse 1.0.0</h2>
